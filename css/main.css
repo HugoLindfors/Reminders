@@ -1,0 +1,59 @@
+* {
+  text-align: center;
+}
+
+/* Default Light Mode Styles (if no preference is specified or prefers-color-scheme: light) */
+body {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.container {
+  border: 1px solid #ccc;
+}
+
+.btn,
+.btn:hover {
+  border: 1px solid #333;
+  color: #333;
+}
+
+.btn:hover {
+  text-decoration: underline;
+}
+
+input[type="text"] {
+  border: 1px solid #333;
+  border-radius: 0.375rem;
+  background-color: #fff;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* Dark Mode Styles based on user preference */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #222;
+    color: #fff;
+  }
+
+  .container {
+    border: 1px solid #555;
+  }
+
+  .btn,
+  .btn:hover {
+    border-color: #fff;
+    color: #fff;
+  }
+
+  input[type="text"] {
+    border-color: #fff;
+    background-color: #333;
+    color: #fff;
+  }
+}
+
+#page {
+  height: 100vh;
+}
